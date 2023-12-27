@@ -27,9 +27,12 @@ public class FrameSort {
                 }
             }
         }
-        System.out.println("Sorted Frames Are:");
+        System.out.println("Sorted Frames :");
         for (int i = 0; i < n; i++)
             System.out.print(frames[i].data + " ");
+        System.out.println("\nSorted Frames in order:");
+        for (int i = 0; i < n; i++)
+            System.out.print("Frame "+i+" :"+frames[i].data+"\n");
         sc.close();
     }
 }

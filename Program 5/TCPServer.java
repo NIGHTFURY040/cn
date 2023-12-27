@@ -12,7 +12,7 @@ public class TCPServer {
         InputStream istream = socket.getInputStream();
         Scanner sc = new Scanner(new InputStreamReader(istream));
         String fname = sc.nextLine();
-
+        System.out.println("Requested file: "+fname);
         OutputStream ostream = socket.getOutputStream();
         PrintWriter pWrite = new PrintWriter(ostream, true);
 

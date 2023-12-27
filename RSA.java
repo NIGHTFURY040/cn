@@ -73,7 +73,7 @@ public class RSA {
         int[] ctext = rsaEncrypt(Ptext, e, n);
         System.out.print("CipherText : ");
         for (int i : ctext) {
-            System.out.print(i);
+            System.out.print(i+" ");
         }
         String decText = rsaDecrypt(ctext, d, n);
 
