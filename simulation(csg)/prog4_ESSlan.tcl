@@ -112,7 +112,7 @@ exec echo "Number of packets dropped is : " &
 exec grep -c "^D" p6.tr &
 exit 0
 }
-
+# try "exec awk -f prog4.awk" after the & above after p6.tr 
 $ns at 1.0 "$cbr0 start"
 $ns at 2.0 "$ftp0 start"
 $ns at 180.0 "$ftp0 stop"
