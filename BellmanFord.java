@@ -25,8 +25,8 @@ public class BellmanFord {
             }
         }
         for (int i = 0; i < n; i++) {
-            if (i != start)
-                System.out.println("Distance of " + (i + 1) + " from Source(" + start + ") is " + distance[i]);
+            //if (i != start)
+                System.out.println("Distance of " + ( i ) + " from Source(" + start + ") is " + distance[i]);
         }
 
     }
@@ -44,7 +44,7 @@ public class BellmanFord {
         }
         System.out.print("Enter the Source : ");
         int source = sc.nextInt();
-        bellmanford(graph, n, source - 1);
+        bellmanford(graph, n, source );
         sc.close();
     }
 }

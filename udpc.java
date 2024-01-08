@@ -12,7 +12,7 @@ import java.net.*;
           System.out.println("Enter the string in lowercase so that you receive the message in Uppercase from the server");
           String sentence=inFromUser.readLine();
           sendData=sentence.getBytes();
-         DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, IPAddress, 1090);
+          DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, IPAddress, 1090);
           clientSocket.send(sendPacket);
           DatagramPacket receivePacket=new DatagramPacket(receiveData, receiveData.length);
           clientSocket.receive(receivePacket);
